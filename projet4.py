@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+t=np.linspace(-2*np.pi,2*np.pi,100)
+fe=1/(2*np.pi)
+te=np.arange(-2*np.pi,2*np.pi,1/fe)
+x=4*np.abs(t)
+xe=4*np.abs(te)
+plt.plot(t,x)
+plt.show()
+plt.plot(t,x)
+plt.stem(te,xe)
+plt.show()
+plt.plot(t,x)
+plt.stem(te,xe)
+plt.step(te,xe)
+plt.show()
